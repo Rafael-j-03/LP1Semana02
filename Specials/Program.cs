@@ -43,6 +43,13 @@ namespace Specials
             float i6 = -2 * float.MaxValue;
             Console.WriteLine(i5);
             Console.WriteLine(i6);
+            
+            float i7, i8;
+            i7 = i8 = 98553.0f;
+            double i9, i10;
+            i9 = i10 = 60324.0f;
+            Console.WriteLine(i7 == i8 + 0.001f);
+            Console.WriteLine(i9 == i10 + 0.000000000001f);
         }
     }
 }
