@@ -11,11 +11,9 @@ namespace PerguntaValores
 
             Console.WriteLine("Please enter the cylinder's radius:");
             string rQ = Console.ReadLine();
-
+            
             int a = Convert.ToInt32(aQ);
-
             int r = Convert.ToInt32(rQ);
-
             float pi = 3.1415926f;
 
             float V = pi * r * r * a;
