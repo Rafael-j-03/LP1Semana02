@@ -6,26 +6,16 @@ namespace GranpaPatternSwitch
     {
         private static void Main(string[] args)
         {
-            string question, response;
-
             Console.Write("Place your question? ");
-            question = Console.ReadLine();
+            string question = Console.ReadLine();
 
-            switch (question)
+            string response = question switch
             {
-                case "How are you?":
-                    response = "I'm fine, thank you";
-                    break;
-                case "What's your name?":
-                    response = "Gran'pa";
-                    break;
-                case "What's your mission?":
-                    response = "Destroy mankind!";
-                    break;
-                default:
-                    response = "You got me, I'm not THAT smart!";
-                    break;
-            }
+                "How are you?" => "I'm fine, thank you",
+                "What's your name?" => "Gran'pa",
+                "What's your mission?" => "Destroy mankind!",
+                _ => "You got me, I'm not THAT smart!",
+            };
 
             Console.WriteLine(response);
         }
