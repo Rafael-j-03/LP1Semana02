@@ -19,6 +19,10 @@ namespace PerguntaValores
             float V = pi * r * r * a;
 
             Console.WriteLine($"The cylinder's volume is: {V}");
+
+            float Sa = 2 * pi * r * (r + a);
+
+            Console.WriteLine($"The cylinder's surface area is: {Sa}");
         }
     }
 }
