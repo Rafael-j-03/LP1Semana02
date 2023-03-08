@@ -29,6 +29,15 @@ namespace Specials
             Console.WriteLine(double.PositiveInfinity);
             Console.WriteLine(double.NegativeInfinity);
             Console.WriteLine(double.NaN);
+
+            int i1 = short.MaxValue;
+            int i2 = short.MinValue;
+            int i3 = sbyte.MaxValue;
+            int i4 = sbyte.MinValue;
+            Console.WriteLine((short) (i1 + 1));
+            Console.WriteLine((short) (i2 - 1));
+            Console.WriteLine((sbyte) (i3 + 1));
+            Console.WriteLine((sbyte) (i4 - 1));
         }
     }
 }
