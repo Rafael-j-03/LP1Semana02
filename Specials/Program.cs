@@ -38,6 +38,11 @@ namespace Specials
             Console.WriteLine((short) (i2 - 1));
             Console.WriteLine((sbyte) (i3 + 1));
             Console.WriteLine((sbyte) (i4 - 1));
+
+            double i5 = 2 * double.MaxValue;
+            float i6 = -2 * float.MaxValue;
+            Console.WriteLine(i5);
+            Console.WriteLine(i6);
         }
     }
 }
