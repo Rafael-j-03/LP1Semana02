@@ -11,6 +11,11 @@ namespace ChatGPTMother
                 Console.Write("Place your question: ");
                 string input = Console.ReadLine();
 
+                if (input == "EXIT")
+                {
+                    break;
+                }
+
                 string response = input switch
                 {
                     "How are you?" => "I'm fine, thank you!",
