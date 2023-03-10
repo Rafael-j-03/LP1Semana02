@@ -18,7 +18,13 @@ namespace CrossSquare
                     {
                         Console.Write("#");
                     }
-                    
+
+                    // Write the middle with cross Xs
+                    else if (i == j || j == (n - i + 1))
+                    {
+                        Console.Write("X");
+                    }
+
                     // Write the empty spaces
                     else
                     {
